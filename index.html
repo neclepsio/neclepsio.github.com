@@ -20,18 +20,19 @@
         }
     </style>
 
-    <script>
+    
+<script>
     var carrello = {};
 
     function setMessaggio(messaggio) {
         var messaggioEnc = encodeURIComponent(messaggio);
         document.getElementById("messaggio-pre").innerHTML = messaggio;
         document.getElementById("messaggio-wa").setAttribute("href", 
-            "https://wa.me//{{fixPhone .Opzioni.FirstRecord.WhatsApp}}?text=" + messaggioEnc);
+            "https://wa.me//393200220542?text=" + messaggioEnc);
         document.getElementById("messaggio-sms").setAttribute("href", 
-            "sms:/+{{fixPhone .Opzioni.FirstRecord.SMS}};?&body=" + messaggioEnc);
+            "sms:/+393200220542;?&body=" + messaggioEnc);
         document.getElementById("messaggio-email").setAttribute("href", 
-            "mailto:{{.Opzioni.FirstRecord.Email}}?subject=Ordine&body=" + messaggioEnc);
+            "mailto:neclepsio@gmail.com?subject=Ordine&body=" + messaggioEnc);
     }
 
     function buttonClick(e) {
@@ -80,8 +81,8 @@
         var prezzoTotale = 0;
         var numeroTotale = 0;
         for (var id in carrello) {
-            // lo aggiorno anche qui per aggiornare in caso di caricamento
-            // dallo storage e di aggiornamento dalle offerte
+            
+            
             document.querySelectorAll("[data-field=\"numero\"][data-id=\""+id+"\"]").forEach(function(x) {
                 x.innerHTML = carrello[id].numero;
             });
@@ -164,7 +165,7 @@
         }
         var c = window.localStorage.getItem("carrello");
         var time = Date.parse(window.localStorage.getItem("time"));
-        if (!c || !time || new Date() > time + 60*60*1000) {   // un'ora
+        if (!c || !time || new Date() > time + 60*60*1000) {   
             return;
         }
         carrello = JSON.parse(c);
@@ -176,9 +177,9 @@
         document.querySelectorAll("[data-field=\"nome\"]").forEach (function (x) {
             ids.push(parseInt(x.getAttribute("data-id")));
         });
-        // le ordina per evitare problemi con le offerte
-        // l'ordine di enumerazione è quello di inserimento
-        // inserimenti duplicati non cambiano la situazione
+        
+        
+        
         ids = ids.sort();
         for (var i = 0; i < ids.length; i++) {
             carrello[ids[i].toString()] = {
@@ -217,7 +218,8 @@
     });
 </script>
 
-    <style>
+    
+<style>
     section {
         padding: 0rem 1rem 1rem 1rem;
     }
@@ -306,6 +308,7 @@
         vertical-align: middle;
     }
 </style>
+
 </head>
 
 <body>
