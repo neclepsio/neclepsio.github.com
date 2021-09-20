@@ -1,0 +1,4 @@
+[submodule "campitelli"]
+	path = campitelli
+	url = http://github.com/neclepsio/canti
+	branch = master
