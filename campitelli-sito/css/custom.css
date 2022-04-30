@@ -1,45 +1,24 @@
-/* Links */
-a:hover {
-    color: #b6b84c;
-}
+/*
+:root {
+  --head-color: #fff;
+  
+  --fixed-nav-background: rgba(255, 255, 255, 0.9);
+  --a-hover-color: #86c440;
+  
+  --btn-background: #9fd067;
+  --btn-color: #fff;  
+  
+  --odd-color: #3a4145;
+  --even-color: #f2efe8;
+  
+  --odd-background-color: #b80135;
+  --even-background-color: #f2efe8;
+ 
+  --sel-color: #222;
+  --sel-background: #d6edff;
 
-/* Header Buttons on Startpage */
-a.btn {
-    color: white;
-    background-color: #ced067;
+  --footer-color: #bbc7cc;
+  --footer-background: #22343a;
+  --footer-color-hover: #50585d; 
 }
-a.btn:hover {
-    background-color: #b6b84c;
-}
-
-/* Scroll Menu on Startpage */
-a.fn-item.active {
-    color: #b6b84c;
-}
-a.fn-item:hover {
-    color: #ced067;
-}
-
-/* Content / Sections */
-.post-holder.odd {
-    background: #B80135;
-    color: white;
-}
-.post-holder {
-    background: #f2efe8;
-}
-body {
-    color: #3A4145;
-}
-
-/* Footer */
-.site-footer {
-    color: #BBC7CC;
-    background-color: #22343A;
-}
-
-.fixed-nav {
-    padding: 8px;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 4px;
-}
+*/

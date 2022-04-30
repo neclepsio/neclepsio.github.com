@@ -2,6 +2,7 @@
  * Main JS file for GhostScroll behaviours
  */
 
+/*
 var $post = $(".post");
 var $first = $(".post.first");
 var $last = $(".post.last");
@@ -9,9 +10,10 @@ var $fnav = $(".fixed-nav");
 var $postholder = $(".post-holder");
 var $postafter = $(".post-after");
 var $sitehead = $("#site-head");
+*/
 
 /* Globals jQuery, document */
-(function ($) {
+/*(function ($) {
   "use strict";
   function srcTo(el) {
     $("html, body").animate(
@@ -74,10 +76,11 @@ var $sitehead = $("#site-head");
         var g = $sitehead.offset().top;
         var h = $sitehead.offset().top + $sitehead.height() - 100;
 
+        //console.log(w, Math.floor(g) , w , Math.ceil(h), w >= Math.floor(g), w <= Math.ceil(h));
         if (w >= Math.floor(g) && w <= Math.ceil(h)) {
-          $(".fixed-nav").fadeOut("fast");
+          $fnav.fadeOut("fast");
         } else if ($(window).width() > 500) {
-          $(".fixed-nav").fadeIn("fast");
+          $fnav.fadeIn("fast");
         }
 
         $post.each(function () {
@@ -136,3 +139,4 @@ var $sitehead = $("#site-head");
     }
   });
 })(jQuery);
+*/
