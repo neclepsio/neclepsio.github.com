@@ -1,18 +1,19 @@
 /*
 :root {
   --head-color: #fff;
+  --head-shadow-color: #000;
   
-  --fixed-nav-background: rgba(255, 255, 255, 0.9);
+  --fixed-nav-background: rgba(255, 255, 255, 0.95);
+  
+  --a-active-color: #9fd067;
   --a-hover-color: #86c440;
-  
-  --btn-background: #9fd067;
   --btn-color: #fff;  
   
-  --odd-color: #3a4145;
-  --even-color: #f2efe8;
-  
   --odd-background-color: #b80135;
+  --odd-color: #f2efe8;
+  
   --even-background-color: #f2efe8;
+  --even-color: #3a4145;
  
   --sel-color: #222;
   --sel-background: #d6edff;
