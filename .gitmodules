@@ -1,4 +1,4 @@
-[submodule "campitelli"]
+[submodule "campitelli-canti"]
 	path = campitelli-canti
 	url = https://github.com/neclepsio/canti
 	branch = master
