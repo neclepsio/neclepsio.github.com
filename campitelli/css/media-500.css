@@ -1,0 +1,57 @@
+@media only screen and (max-width: 500px) {
+  .post-holder {
+    padding-top: 20px;
+  }
+
+  .inner {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .post {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 0.8em;
+    line-height: 1.6em;
+  }
+
+  #site-head {
+    padding: 10% 0;
+  }
+
+  #header-arrow {
+    display: none;
+  }
+
+  a.btn {
+    margin-top: 10px;
+  }
+
+  h1,
+  h2 {
+    line-height: 1.1em;
+    letter-spacing: -1px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+ 
+  h2 {
+    font-size: 2.8rem;
+  }
+  
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2.0rem;
+  }
+
+  .site-footer {
+    font-size: 1.1rem;
+  }
+}
