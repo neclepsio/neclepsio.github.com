@@ -1,0 +1,1 @@
+ffmpeg -i spirito_santo.webm -c:v copy -filter:a loudnorm spirito_santo-n.webm
