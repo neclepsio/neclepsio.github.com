@@ -528,14 +528,22 @@ Dio, che è stato voluto ed amato per quello che è. Dio non produce scarti.
 			</div>
 		</div>
 
+		<style>
+			img, video {
+				height: 100%;
+			}
+		</style>
+
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			let sn = window.location.search.substr(1) == "print-pdf";
+
 			Reveal.initialize({
 				hash: true,
-				showNotes: true,
+				showNotes: sn,
 				
 				controlsBackArrows: 'visible',
 				navigationMode: 'linear',
@@ -545,6 +553,23 @@ Dio, che è stato voluto ed amato per quello che è. Dio non produce scarti.
 				markdown: {
 					smartypants: true
 				}
+			});
+
+			let done = false;
+			document.addEventListener("readystatechange", () => {
+				if (document.readyState !== 'complete')
+					return;
+				if (done) 
+					return;
+				done = true;
+
+				let b = document.querySelector("h1");
+				b.addEventListener("click", function () {
+					sn = !sn;
+					Reveal.configure({
+						showNotes: sn,
+					});
+				});
 			});
 		</script>
 	</body>
