@@ -1,4 +1,3 @@
-/*
 :root {
   --head-color: #fff;
   --head-shadow-color: #000;
@@ -12,7 +11,7 @@
   --odd-background-color: #b80135;
   --odd-color: #f2efe8;
   
-  --even-background-color: #f2efe8;
+  --even-background-color: #F3EED9;
   --even-color: #3a4145;
  
   --sel-color: #222;
@@ -22,4 +21,4 @@
   --footer-background: #22343a;
   --footer-color-hover: #50585d; 
 }
-*/
+
